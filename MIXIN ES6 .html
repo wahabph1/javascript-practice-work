@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // mixin concept y kahta h ksi bhi objects hum class m functions use kar skte object alg s bana k 
+        // un classses ke
+        let pe=  {
+            name : "abdul wahab",
+            cast : "shaikh",
+           show: function()
+           {
+                document.write("my name is = " + this.name +" " + this.cast);
+
+            },
+            hello : function(){
+                document.write("</br>");
+                document.write("i am function of object:");
+            }
+        };
+        class A {
+
+        }
+        Object.assign(A.prototype, pe);
+        let st= new A ();
+        st.show();
+        st.hello();
+        //console.log(pe);
+
+    </script>
+</body>
+</html>

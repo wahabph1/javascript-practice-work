@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=1;
+        function a () 
+        {
+            
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                   console.log(" i am function a ");
+                   resolve(); 
+                }, 1000);
+            })
+        }
+
+        function b () 
+        {
+            return new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+                    if (n==1)
+                    {
+                    let b= {
+                    name: "abdul basit",
+                    cast : "shaikh",
+                    dura : "4s",
+                    age : 20
+                   };
+                   console.log(b);
+                   resolve(); 
+                } 
+                }, 4000);
+            })
+        }
+
+
+        function c () 
+        {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                   let a= {
+                    name: "Abdul wahab ",
+                    dura : "1s",
+                    cast : "shaikh",
+                    age : 20
+                   };
+                   console.log(a);
+                   resolve(); 
+                }, 1000);
+            })
+        }
+
+        a().then(function(){
+            console.log("wait for 2nd padding:");
+        }).then(b).then(function(){
+            console.log("wait for again padding:");
+        }).then(c).then(function(){
+            console.log("code  is end :");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 2000px;
+            background-color :yellow
+
+        }
+        div{
+            width: 50%;
+            height: 50vw;
+            background-color: aqua;
+
+        }
+        button{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-color: rgb(0, 76, 255);
+        }
+    </style>
+</head>
+<body id="bo">
+    <div id="d">
+        <button id="b">
+            click me
+        </button>
+    </div>
+
+    <script>
+        let a= document.getElementById("bo");
+        let b= document.getElementById("d");
+        let c= document.getElementById("b");
+
+        a.addEventListener("click" , function()
+        {
+            console.log("body clicked");
+            a.style.background="pink";
+        } )
+        b.addEventListener("click", function () {
+            console.log("dic clicked");
+            b.style.width="50px";
+        } ,true )
+
+        c.addEventListener("click", function(){
+            console.log("button clicked");
+            c.style.width="50px";
+        } , true)
+
+        // bubbling is a series wise work  and capuring opposite it :
+
+    </script>
+</body>
+</html>

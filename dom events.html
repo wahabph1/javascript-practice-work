@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="ab">1</li>
+        <li>2</li>
+        <li class="ab" >3</li>
+        <li>4</li>
+    </ul>
+</body>
+<script>
+    let c= document.getElementsByClassName("ab");
+    for (let i=0; i<2; i++)
+    {
+        c[i].innerHTML="abdul wahab";
+    }
+    c[1].innerHTML="bye";
+    // for one change: 
+
+
+    let t = document.getElementsByTagName("li")
+    for(let i=0; i<4; i++)
+    {
+        t[i].innerHTML=" i have changed with tag names : ";
+        t[i].style.background="blue";
+        
+
+    }
+    t[2].style.color="pink";
+    t[1].style.border="5px dotted green";
+
+    
+
+    </script>
+</html>

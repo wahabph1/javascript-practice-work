@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class A {
+            constructor(a) {
+                this.f = a;
+            }
+        }
+        class B extends A {
+            constructor(a, b)  // yaha class parent ke bhi variable likhege or wo neche super k 
+            // sth likhege waha pass karne k lye:
+            {
+                super(a); // ye yaha class A ka passing var he 
+                this.l = b;
+            }
+            show() {
+                document.write("my name is = " + this.f + " " + this.l);
+            }
+
+        }
+        let st = new B("abdul wahab", "shaikh");
+        st.show();
+    </script>
+</body>
+
+</html>

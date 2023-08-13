@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person (f,l,a){
+            this.first= f;
+            this.last= l;
+            this.age=a;
+        }
+        person.prototype.show = function(){
+            console.log("hi");
+        }
+        let aw= new person ("abdul wahab" , "shaikh" , 20);
+        console.log(aw.show());
+        
+    </script>
+    
+</body>
+</html>

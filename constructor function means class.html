@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person (f,l,age)
+        {
+            this.name=f;
+            this.last=l;
+            this.a=age;
+        }
+     var student = new Person("abdul" , "shaikh ", 7);
+     student.city="hala";
+     console.log(student);
+     Person.prototype.country="pakistan:";
+     console.log(student);
+     var student2= new Person("abdul basit", "memon", 5);
+     console.log(student2.country);
+
+     for (let key in student)
+     {
+        document.write( key + "  " + student[key]);
+        document.write("</br>")
+     }
+
+
+
+    </script>
+</body>
+</html>

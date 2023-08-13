@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A {
+            hi ()
+            {
+                document.write(" i m class A ");
+                document.write("</br>");
+            }
+            show()
+            {
+                document.write("</br>");
+                document.write("i am show funtion belongs to A ");
+                document.write("</br>");
+            }
+
+        }
+        class B extends A {
+
+            show()
+            {
+               // super.show(); 1st solution for call parent class function:
+                document.write("</br>");
+                document.write("i am show funtion belongs to B ");
+                document.write("</br>");
+            }
+            hi ()
+            {
+                // 2nd solution for call parent class function which is same name:
+                super.show();
+                this.show(); // this is function of his own class:
+                super.hi(); // ye tab karege jab same name k function ho....
+                document.write("i am class B ");
+
+            }
+        }
+        let st = new B ();
+        st.hi();
+    </script>
+</body>
+</html>

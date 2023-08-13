@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="a">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+
+<ul>
+    <li>6</li>
+    <li>7</li>
+    <li id="v">9</li>
+    <li>0</li>
+    <li>5</li>
+</ul>
+</body>
+<script>
+    let b= document.getElementById("a");
+    let c=b.children;
+    for (let i=0; i<5; i++)
+    {
+        c[i].innerHTML="we are children of ul ";
+    }
+    c[2].innerHTML="i am 3rd children";
+
+
+let n= document.getElementById("v");
+let d= n.previousElementSibling;
+d.innerHTML="i am changed by my sibling :";
+
+let g= d.previousElementSibling;
+g.innerHTML = " i am also changed by my sibling :";
+
+
+
+</script>
+</html>

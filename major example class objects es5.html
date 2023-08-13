@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show (a,b)
+        {
+            this.name= a;
+            this.last= b;
+            
+            this.show = function ()
+            {
+                console.log("my full namw is = "  +this.name + " " + this.last );
+            }
+
+        }
+        let student = new show ("Abdul wahab", "shaikh");
+        console.log(student.show());
+
+        function show2(a){
+            this.age=a;
+            this.m = function()
+            {
+            console.log("my age is " + this.age); }
+        }
+        let student2 = new show2(20);
+        console.log(student2.m);
+
+    </script>
+</body>
+</html>

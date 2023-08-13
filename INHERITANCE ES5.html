@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function A (f,l) {
+            this.name= f;
+            this.last= l;
+        }
+        function B (a)
+        {
+            this.age= a;
+        }
+        let student1= new A ("abdul", "wahab");
+        console.log(student1);
+        let student2= new A ("abdul ", "basit");
+        console.log(student2);
+
+        let student3 = new B (20);
+        console.log(student3);
+
+        // here we can not aceess methods and property of class A 
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name : " abdul wahab" ,
+            cast : "shaikh",
+
+            show3: function()
+            {
+                document.write("this is software student ");
+            },
+
+            show4()
+            {
+                document.write("stuent of 2nd semester:");
+            }
+        };
+        console.log(person);
+        console.log(person.name);
+        console.log(person["name"]);
+
+        person.show = function()
+        {
+            document.write("this is a student : ");
+        }
+        person.show();
+
+
+       function show2 ()
+       {
+        document.write("this is a egineer : ");
+       } 
+       person.show2= show2;
+       person.show2();
+
+       person.show3();
+       person.show4();
+
+
+       
+    </script>
+</body>
+</html>
